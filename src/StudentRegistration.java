@@ -213,7 +213,7 @@ public class StudentRegistration extends javax.swing.JFrame {
             
              try {
             Class.forName("com.mysql.jdbc.Driver");
-            conl = DriverManager.getConnection("jdbc:mysql://localhost:3306/amaechi", "root", "Ihn7ga123!");
+            conl = DriverManager.getConnection("jdbc:mysql://localhost:3306/amaechi", "root", "Pass");
             insert = conl.prepareStatement("select * from record");
             ResultSet rs = insert.executeQuery();
             ResultSetMetaData Rss = rs.getMetaData();
@@ -264,7 +264,7 @@ public class StudentRegistration extends javax.swing.JFrame {
    
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            conl = DriverManager.getConnection("jdbc:mysql://localhost:3306/amaechi", "root", "Ihn7ga123!");
+            conl = DriverManager.getConnection("jdbc:mysql://localhost:3306/amaechi", "root", "Pass");
             insert = conl.prepareStatement("insert into record(name, phoneNumber, course)values(?,?,?)");
             insert.setString(1, name);
             insert.setString(2, phoneNumber);
@@ -323,7 +323,7 @@ public class StudentRegistration extends javax.swing.JFrame {
                 String course = txtCourse.getText();
                 
             Class.forName("com.mysql.jdbc.Driver");
-            conl = DriverManager.getConnection("jdbc:mysql://localhost:3306/amaechi", "root", "Ihn7ga123!");
+            conl = DriverManager.getConnection("jdbc:mysql://localhost:3306/amaechi", "root", "Pass");
             insert = conl.prepareStatement("update record set name= ?, phoneNumber=?, course=? where id=?");
             insert.setString(1, name);
             insert.setString(2, phoneNumber);
@@ -360,7 +360,7 @@ public class StudentRegistration extends javax.swing.JFrame {
                 if(dialogResult == JOptionPane.YES_OPTION) {
                     
             Class.forName("com.mysql.jdbc.Driver");
-            conl = DriverManager.getConnection("jdbc:mysql://localhost:3306/amaechi", "root", "Ihn7ga123!");
+            conl = DriverManager.getConnection("jdbc:mysql://localhost:3306/amaechi", "root", "Pass");
             insert = conl.prepareStatement("delete from record where id=?");
             insert.setInt(1, id);
             insert.executeUpdate();
