@@ -421,7 +421,7 @@ public class StudentRegistration extends javax.swing.JFrame {
         });
     }
 
-    // Variables declaration - do not modify//GEN-BEGIN:variables
+    // Variables declaration - do not modify//GEN-BEGIN:variable
     private javax.swing.JButton Add;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
